@@ -1,4 +1,4 @@
-checking how dictionary works
+# checking how dictionary works
 a={"Rajiv":"Shukla","Naman":"Ahuja","Taimur":"Khan","Yashashvi":"Sharma","Maya":"Collins","Aditi":"Shukla","Shubham":{"b":"Sandwhich","l":"Poori","d":"Sabzi"}}
 print(a["Yashashvi"])#searches the name and finds out what it corresponds to
 print(a["Maya"])

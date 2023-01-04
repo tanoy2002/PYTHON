@@ -16,11 +16,11 @@ b=5
 print(x)
 x+=7#x=x+7
 print(x)
-y-=7#x=x-7
+y-=7#y=y-7
 print(y)
-a*=7#x=x*7
+a*=7#a=a*7
 print(a)
-b%=7#x=x%7
+b%=7#b=b%7
 print(b)
 #Comparison operators
 print("Comparison operators")
@@ -48,4 +48,4 @@ print(10 not in list)
 #Bitwise Operators
 print(0&1)#and opertion with individual bits of the specified numbers
 print(0|1)#or opertion with individual bits of the specified numbers
-print(0|3)#or opertion with individual bits of the specified numbers 
+print(0|3)#or opertion with individual bits of the specified numbers

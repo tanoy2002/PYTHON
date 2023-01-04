@@ -21,7 +21,7 @@ numbers.append(789)
 numbers.insert(0,6789)
 numbers.insert(3,890)
 numbers.remove(15)#put the element to be removed
-numbers.pop()#put the index of the element to be removed
+numbers.pop()#put the index of the element to be removed#if anything is not specified inside the function then the last element is removed
 print(numbers)
 tp=(1,7,9)
 print(tp)
