@@ -1,3 +1,6 @@
+
+
+
 #Reversing a string
 # def reverse_string(str):
 #     str1 = ""   # Declaring empty string to store the reversed string
@@ -95,7 +98,3 @@ obj1=child()
 obj2=parent()
 print(isinstance(obj2,child))
 print(isinstance(obj2,parent))
-
-
-
-        
