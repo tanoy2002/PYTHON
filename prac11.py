@@ -1,6 +1,3 @@
-
-
-
 #Reversing a string
 # def reverse_string(str):
 #     str1 = ""   # Declaring empty string to store the reversed string
@@ -98,3 +95,32 @@ obj1=child()
 obj2=parent()
 print(isinstance(obj2,child))
 print(isinstance(obj2,parent))
+###POLYMORPHISM EXAMPLE
+class dog:
+    def sound(self):
+        print("Bow Bow")
+class cat:
+    def sound(self):
+        print("Meow Meow")
+def makesound(animaltype):
+    animaltype.sound()
+dogobj=dog()
+catobj=cat()
+makesound(dogobj)
+makesound(catobj)
+###ENCAPSULATION EXAMPLE
+#Protected Members
+class Base:
+    def __init__(self):
+        self._p=47
+class Derived(Base):
+    def __init__(self):
+        Base.__init__(self)
+        print("We will call the protected member of the base class:",self._p)
+        self._p=456
+        print("We will call the modified protected member outside the base class:",self._p)
+obj1=Derived()
+obj2=Base()
+print("Accesed the modified protected member outside the class: ",obj1._p)
+print("Accesed the modified protected member of the base class: ",obj2._p)
+#Private Members
