@@ -1,3 +1,8 @@
+
+
+
+
+
 #Reversing a string
 # def reverse_string(str):
 #     str1 = ""   # Declaring empty string to store the reversed string
@@ -124,3 +129,54 @@ obj2=Base()
 print("Accesed the modified protected member outside the class: ",obj1._p)
 print("Accesed the modified protected member of the base class: ",obj2._p)
 #Private Members
+class Base:
+    def __init__(self):
+        self._q=32
+        self.__p=38
+class Derived(Base):
+    def __init__(self):
+        Base.__init__(self)
+        print("We are able to access the protected member of base class: ",self._q)
+        # print("We are not able to access the private member of base class: ",self.__p)
+obj1=Derived()
+obj2=Base()
+print(obj2._q)
+# print(obj2._p)
+print(obj1._q)
+###ABSTRACTION EXAMPLE
+from abc import ABC
+class polygon(ABC):
+    def sides(self):
+        pass
+class triangle(polygon):
+    def sides(self):
+      print("triangle has 3 sides")
+class square(polygon):
+    def sides(self):
+      print("square has 4 sides")
+class pentagon(polygon):
+    def sides(self):
+      print("pentagon has 5 sides")
+class hexagon(polygon):
+  def sides(self):
+    print("hexagon has 6 sides")
+t=triangle()
+t.sides()
+s=square()
+s.sides()
+p=pentagon()
+p.sides()
+h=hexagon()
+h.sides()
+###PALINDROME MATHEMATICAL WAY
+num=int(input("Enter a number:"))
+temp=num
+rev=0
+while(num>0):
+    dig=num%10
+    rev=rev*10+dig
+    num=num//10
+if(temp==rev):
+    print("The number is palindrome!")
+else:
+    print("Not a palindrome!")
